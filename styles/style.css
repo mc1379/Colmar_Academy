@@ -1,0 +1,402 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  padding-left: 24px;
+  width: auto;
+}
+.container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+p, blockquote {
+  font-family: "Quicksand", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
+a {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(77, 77, 77);
+  line-height: 1.4;
+}
+h3, .thesis .text a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 400;
+  color: rgb(77, 77, 77);
+  letter-spacing: 0.9px;
+  line-height: 1.4;
+}
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: rgb(77, 77, 77)
+}
+header {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+}
+header .mobile {
+  display: none;
+}
+.information .mobile {
+  display: none;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  display: block;
+  height: 50px;
+}
+.name {
+  display: inline-flex;
+  align-items: center;
+}
+.name p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: rgb(155, 155, 155);
+  font-weight: 300;
+  padding-left: 2px;
+  letter-spacing: 1px;
+}
+.name p:first-child {
+  font-weight: 600;
+  color: rgb(74, 74, 74);
+}
+.desktop ul {
+  display: flex;
+  height: 100%;
+  padding: 8px;
+}
+.desktop li {
+  padding: 8px;
+}
+.desktop a {
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 21px;
+}
+@media only screen and (max-width: 760px) {
+  header.content {
+    padding: 0 16px;
+  }
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.jumbotron {
+  background-color: rgb(216, 216, 216);
+  width: auto;
+  align-items: center;
+}
+.side {
+  width: 60%;
+  display: block;
+}
+.side img {
+  width: 100%;
+  margin-right: 24px;
+}
+.slogan {
+  display: block;
+  padding: 40px;
+  width: 40%;
+}
+.slogan h3 {
+  padding: 35px 0px;
+}
+.startbutton {
+  text-align: center;
+  width: 93%;
+  padding: 8px 0px;
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
+}
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+  .jumbotron .side {
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .slogan {
+    width: auto;
+    padding: 32px 16px;
+  }
+  .slogan h1 {
+    font-size: 40px;
+  }
+  .slogan h3 {
+    font-size: 24px;
+    padding: 32px 0 24px 0;
+  }
+  .startbutton {
+    width: 100%;
+    background-color: rgb(155, 155, 155);
+  }
+}
+.information, .info {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding-right: 0px;
+  background-color: rgb(243, 245, 245);
+}
+
+.information .left, .info .left {
+  padding-right: 40px;
+  padding-bottom: 32px;
+}
+
+.information img {
+  display: block;
+}
+.idea p, .idea blockquote {
+  margin: 24px 40px 24px 0px;
+  letter-spacing: 0.9px;
+}
+.right {
+  display: block;
+  height: auto;
+  max-width: 40%;
+  border-left-style: solid;
+  border-color: rgb(216, 216, 216);
+  border-width: 1px;
+  padding: 16px 0;
+}
+.block {
+  display: flex;
+  min-width: 423px;
+  min-height: 168px;
+  border-bottom-style: solid;
+  border-color: rgb(216, 216, 216);
+  border-width: 1px;
+}
+div.image {
+  display: block;
+  padding: 16px 16px;
+  width: 35%;
+}
+.image img {
+  width: 100%;
+}
+div.text {
+  display: block;
+  margin: 32px 16px;
+  width: 65%;
+}
+.text p {
+  padding: 16px 0;
+  line-height: 1.4;
+}
+.text a {
+  text-decoration: none;
+  color: rgb(74, 144, 226);
+}
+.grey {
+  background-color: rgb(216, 216, 216);
+}
+@media only screen and (max-width: 760px) {
+  .image.desktop {
+    display: none;
+  }
+  .information {
+    padding: 16px;
+    border-bottom: 1px solid;
+    border-color: rgb(216, 216, 216);
+  }
+  .right {
+    min-width: 100%;
+    border-left: 0px;
+  }
+  .block {
+    display: block;
+    border-bottom: 0px;
+    height: auto;
+    min-width: 100%;
+  }
+
+  .content .information {
+    padding: 16px;
+  }
+
+  .image.mobile {
+    display: block;
+  }
+  div.image {
+    width: auto;
+    padding: 0px;
+  }
+  div.text {
+    width: auto;
+    margin: 32px;
+  }
+  .grey {
+    background-color: rgb(243, 245, 245);
+    padding-bottom: 16px;
+  }
+}
+.learn {
+  display: block;
+  text-align: center;
+  width: auto;
+  background-color: rgb(234, 235, 236);
+}
+.cources {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  padding-top: 32px;
+}
+.line {
+  display: inline-flex;
+  justify-content: center;
+}
+.lineone:last-child {
+  margin-right: 0;
+}
+.square {
+  display: block;
+  max-width: 25%;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  text-align: left;
+  background-color: white;
+}
+.square img {
+  width: 100%;
+}
+.description {
+  padding: 16px;
+}
+.description h3, .description p {
+  margin: 8px;
+}
+.description p {
+  line-height: 1.5;
+}
+@media only screen and (max-width: 760px) {
+.learn {
+  background-color: rgb(243, 245, 245);
+  display: block;
+  padding: 32px 16px;
+  border-bottom: 1px solid;
+  border-color: rgb(216, 216, 216);
+}
+.line {
+  display: block;
+  width: 100%;
+}
+.square {
+  min-width: 100%;
+  margin-right: 0px;
+  margin-bottom: 16px;
+}
+.learn .square {
+  background-color: rgb(216, 216, 216);
+}
+}
+.thesis {
+  display: block;
+  width: auto;
+  background-color: rgb(243, 245, 245);
+  border-bottom-style: solid;
+  border-color: grey;
+}
+.topline {
+  text-align: center;
+}
+.thesis .right, .thesis .block {
+  border-color: rgb(243, 245, 245);
+}
+.thesis .right {
+  padding: 32px 0;
+}
+@media only screen and (max-width: 760px) {
+  .container.thesis {
+    padding: 0px;
+  }
+  .content .thesis .information{
+    padding: 0px;
+  }
+  .topline {
+    padding: 32px 0px;
+  }
+  .desktop {
+  display: none;
+  }
+  .thesis .side {
+    width: 100%;
+  }
+  .thesis .left {
+    padding: 0px;
+  }
+  .thesis .side img {
+    margin-right: 0px;
+    padding-bottom: 24px;
+  }
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(243, 245, 245);
+  padding-bottom: 40px;
+}
+footer p, footer .desktop a {
+  font-size: 18px;
+}
+footer.content {
+  border: 1px solid;
+  border-color: rgb(216, 216, 216);
+}
+@media only screen and (max-width: 760px) {
+  footer.content {
+    border-color: rgb(243, 245, 245);
+    padding: 16px;
+  }
+}
